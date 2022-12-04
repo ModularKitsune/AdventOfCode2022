@@ -44,6 +44,7 @@ def choiceScore(value):
     else:
         print('Improper input')
 
+
 def calculateResponse(values):
     # Lose case
     if values[1] == 'X':
@@ -55,7 +56,7 @@ def calculateResponse(values):
             return 'Y'
     # Draw case
     elif values[1] == 'Y':
-        return chr(ord(values[0])+23)
+        return chr(ord(values[0]) + 23)
     # Win case
     else:
         if values[0] == 'A':
@@ -64,6 +65,7 @@ def calculateResponse(values):
             return 'Z'
         else:
             return 'X'
+
 
 if __name__ == "__main__":
     main()
